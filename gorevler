@@ -1,0 +1,24 @@
+liste = []
+
+def ekle():
+    yapilacak = input("eklemek istediginiz gorevi giriniz")
+    liste.append(yapilacak)
+def goster():
+    print(liste)
+def sil():
+    kaldır = input("kaldırmak istediginiz gorevi giriniz")
+    if kaldır in liste:
+        liste.remove(kaldır)
+while True:
+    print("""
+    1) bir gorev ekleyin
+    2) gorevleri listeleyin
+    3) bir gorevi silin
+    """)
+    secim = input("seciminiz")
+    if secim=="1":
+        ekle()
+    elif secim=="2":
+        goster()
+    elif secim=="3":
+        sil()
